@@ -1,0 +1,22 @@
+[user]
+	name = Diane Delallée
+	email = diane.delallee@pix4d.com
+[core]
+	editor = nano
+[diff]
+	tool = kdiff3
+[difftool "kdiff3"]
+    	cmd = "/Applications/kdiff3.app/Contents/MacOS/kdiff3 $BASE $LOCAL $REMOTE -o $MERGED "
+[merge]
+	tool = kdiff3
+[mergetool "kdiff3"]
+	cmd = "/Applications/kdiff3.app/Contents/MacOS/kdiff3 $BASE $LOCAL $REMOTE -o $MERGED "
+[credential]
+	helper = cache
+[color]
+    ui = true
+
+[alias]
+    co = checkout
+    lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+    graph = log --graph --oneline
